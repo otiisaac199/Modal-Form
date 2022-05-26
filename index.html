@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pagecontainer">
+      <div class="heads">
+        <div class="head">
+          <h2>Modal Login Form</h2>
+          <button class="light-mode">Mode</button>
+        </div>
+        <button class="login-button">Login</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="modal">
+        <form action="" class="modal-content">
+          <div class="img-container">
+            <span class="close">&times;</span>
+            <img src="img_avatar.png" alt="" class="avatar" />
+          </div>
+          <div class="container">
+            <!-- username -->
+            <label for="name">Username</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your Name"
+              required
+            />
+            <!-- password -->
+            <label for="pswrd">Password</label>
+            <input
+              type="password"
+              name="pswrd"
+              placeholder="Enter Password"
+              id=""
+            />
+            <button class="formlogin">Login</button>
+            <label>
+              <input type="checkbox" name="remember" checked />Remember me
+            </label>
+          </div>
+
+          <!-- footer -->
+          <div class="footer">
+            <button class="cancelbtn">Cancel</button>
+            <span><a href="">Forgot Password</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

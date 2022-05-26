@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.-mode {
+  background: black;
+  color: #fff;
+}
+
+.light-mode {
+  background: #000;
+  color: #fff;
+}
+
+.pagecontainer .heads {
+  padding: 10px 20px;
+}
+
+.pagecontainer .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pagecontainer button {
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 13px 20px;
+}
+
+.pagecontainer button:hover {
+  opacity: 0.8;
+}
+
+.pagecontainer .login-button {
+  width: auto;
+  height: auto;
+  background: #68cb68;
+  margin: 5px 0 0 0;
+}
+
+.pagecontainer .modal {
+  display: none;
+  color: #fff;
+  background: black;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  padding-top: 50px;
+}
+
+.pagecontainer .modal .modal-content {
+  border-radius: 10px;
+  width: 55%;
+  background: rgba(4, 58, 62);
+  margin: 5% auto;
+  -webkit-box-shadow: 2px 2px 9px #575757;
+  box-shadow: 2px 2px 9px #575757;
+  padding: 45px 20px;
+  position: relative;
+  -webkit-animation: magnify 0.5s;
+  animation: magnify 0.5s;
+}
+
+.pagecontainer .modal .modal-content .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pagecontainer .modal .modal-content .avatar {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.pagecontainer .modal .modal-content .close {
+  position: absolute;
+  right: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pagecontainer .modal .modal-content .close:hover,
+.pagecontainer .modal .modal-content close:focus {
+  color: red;
+}
+
+.pagecontainer .modal .modal-content label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pagecontainer .modal .modal-content input[type="text"],
+.pagecontainer .modal .modal-content [type="password"] {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 15px 20px;
+  background: unset;
+  color: #fff;
+}
+
+.pagecontainer .modal .modal-content input[type="text"]:focus,
+.pagecontainer .modal .modal-content [type="password"]:focus {
+  outline: unset;
+}
+
+.pagecontainer .modal .modal-content ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.pagecontainer .modal .modal-content :-ms-input-placeholder {
+  color: #fff;
+}
+
+.pagecontainer .modal .modal-content ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.pagecontainer .modal .modal-content ::placeholder {
+  color: #fff;
+}
+
+.pagecontainer .modal .modal-content .formlogin {
+  background: #68cb68;
+  width: 100%;
+}
+
+.pagecontainer .modal .modal-content .chkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagecontainer .modal .modal-content .cancelbtn {
+  margin-top: 5px;
+  background-color: red;
+}
+
+.pagecontainer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@-webkit-keyframes magnify {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes magnify {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal-content {
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
